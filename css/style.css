@@ -1,0 +1,36 @@
+.offcanvas {
+  width: 100vw !important;          
+  max-width: 100% !important;       
+  height: 100vh !important;         
+  margin: 0 !important;             
+}
+.offcanvas-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-color {
+  background-color: #1c1c1c;
+}
+.grijs-color {
+  color: #eaeaea;
+}
+.blauw-color {
+  color: #0099ff  !important;
+}
+.nav-link:hover{
+  color: #0099ff !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);  
+}
+.blauw-achtergrond {
+  background-color: #0099ff;
+}
+body {
+  padding-top: 100px;
+}
+.donker-color {
+  color: #1c1c1c;
+}
