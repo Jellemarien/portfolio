@@ -10,11 +10,18 @@
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <!--leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
     <script src="js/script.js" defer></script>
+    <script src="js/map-werk.js" defer></script>
     
 </head>
 <body class="background-color" >
@@ -50,7 +57,7 @@
             </div>
             </div>
         </nav>
-    <header class="text-center container-fluid mt-5 grijs-color ">
+    <header class="text-center container-fluid mt-5 blauw-color ">
         <h1>contact</h1> 
     </header>
     <div class="container">
@@ -60,8 +67,8 @@
                     <div class="col-12 mb-3">
                         <h2 class="grijs-color ">Neem contact op</h2>
                     </div>
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                        <fieldset class="row g-3 mb-3 form-group">
+                    <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" netlify>
+                        <fieldset class="row g-3 mb-3 form-group grijs-color">
                             <div class="col-md-6 grijs-color">
                                 <label  for="firstName" class="form-label">voornaam</label>
                                 <input name="name" type="text" class="form-control" id="firstName" required>
@@ -93,7 +100,7 @@
                             </div>
                         </fieldset>
                         <div class="col-12">
-                            <button type="submit" value="Upload" class="btn btn-primary">verzenden</button>
+                            <button type="submit" value="Upload" class="btn btn-light blauw-color">verzenden</button>
                         </div>
                     </form>
                     
@@ -101,12 +108,14 @@
                 
             </main>
             <aside class="col col-md-3 grijs-color">
-                <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+                <h2 class="text-uppercase fs-5 fw-bolder pt-3 ">contact</h2>
                 <p>
                     +32 492 32 73 72  <br>
-                    <a href="mailto:marien.jelle@gmail.com">marien.jelle@gmail.com</a><br>
-                            
+                    <a href="mailto:marien.jelle@gmail.com">marien.jelle@gmail.com</a><br>        
                 </p>
+                <section id="map" class="row">
+                    <div id="mapW" class="col-12 mb-3"></div>
+                </section>
             </aside>
         </div>
     </div>
