@@ -55,37 +55,41 @@
     </header>
     <div class="container">
         <div class="row">
-            <main class="col-md-9 pe-3">
+            <main class="col-md-9 ">
                 <section id="contact" class="row">
                     <div class="col-12 mb-3">
                         <h2 class="grijs-color ">Neem contact op</h2>
                     </div>
-                    <form action="#" method="post" netlify>
-                        <fieldset class="row g-3 mb-3">
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                        <fieldset class="row g-3 mb-3 form-group">
                             <div class="col-md-6 grijs-color">
-                                <label for="firstName" class="form-label">voornaam</label>
-                                <input type="text" class="form-control" id="firstName" required>
+                                <label  for="firstName" class="form-label">voornaam</label>
+                                <input name="name" type="text" class="form-control" id="firstName" required>
                             </div>
                             <div class="col-md-6 grijs-color">
                                 <label for="lastName" class="form-label">achternaam</label>
-                                <input type="text" class="form-control" id="lastName" required>
-                            </div>
-                            <div class="col grijs-color">
-                                <label for="mobile" class="form-label">mobiel</label>
-                                <input type="tel" class="form-control" id="mobile" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
-                                placeholder="0415 16 12 13">
-                            </div>
-                            <div class="col grijs-color">
-                                <label for="birthDate" class="form-label">geboortedatum</label>
-                                <input type="date" class="form-control" id="birthDate">
+                                <input name="lastName" type="text" class="form-control" id="lastName" required>
                             </div>
                             <div class="col-md-6 grijs-color">
-                                <label for="exampleFormControlTextarea1" class="form-label">stel hier je vraag?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label  for="email" class="form-label">email</label>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
                             </div>
                             <div class="col-md-6 grijs-color">
-                                <label for="formFile" class="form-label">bestand</label>
-                                <input class="form-control" type="file" id="formFile">
+                                <label  for="birthDate" class="form-label">geboortedatum</label>
+                                <input name="birthDate" type="date" class="form-control" id="birthDate">
+                            </div>
+                            <div class="col-md-6 grijs-color">
+                                <label  for="mobile" class="form-label">mobiel <br></label>
+                                <input name="mobile" type="tel" id="mobile" pattern="[0-9]{4} [0-9]{2} [0-9]{2} [0-9]{2}"
+                                placeholder="0415 16 12 13" class="form-control form-control-sm" required>
+                            </div>
+                            <div class="col col-md-6 grijs-color">
+                                <label  for="message" class="form-label">stel hier je vraag?</label>
+                                <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <div class="col-md-6 grijs-color">
+                                <label  for="formFile" class="form-label">bestand</label>
+                                <input name="formFile" class="form-control" type="file" id="formFile">
                             </div>
                         </fieldset>
                         <div class="col-12">
@@ -94,18 +98,21 @@
                     </form>
                     
                 </section>
-                <aside class="col col-md-3 grijs-color">
-                        <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
-                            <p>
-                            +32 492 32 73 72  <br>
-                            <a href="mailto:marien.jelle@gmail.com">marien.jelle@gmail.com</a><br>
-                            
-                            </p>
-                    </aside>
+                
             </main>
-            <footer>
-                <p class="text-center grijs-color fw-medium mt-5"> &copy; <span id="year"></span> Jelle Mariën</p>
-            </footer>
+            <aside class="col col-md-3 grijs-color">
+                <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+                <p>
+                    +32 492 32 73 72  <br>
+                    <a href="mailto:marien.jelle@gmail.com">marien.jelle@gmail.com</a><br>
+                            
+                </p>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center grijs-color fw-medium mt-5"> &copy; <span id="year"></span> Jelle Mariën</p>
+    </footer>
 
 </body>
 </html> 
