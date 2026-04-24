@@ -9,11 +9,13 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/script.js" defer></script>
+    
 </head>
 <body class="background-color" >
     
@@ -51,19 +53,59 @@
     <header class="text-center container-fluid mt-5 grijs-color ">
         <h1>contact</h1> 
     </header>
-    <main>
-        <aside class="col col-md-3 grijs-color">
-                <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
-                    <p>
-                    +32 492 32 73 72  <br>
-                    <a href="mailto:marien.jelle@gmail.com">marien.jelle@gmail.com</a><br>
+    <div class="container">
+        <div class="row">
+            <main class="col-md-9 pe-3">
+                <section id="contact" class="row">
+                    <div class="col-12 mb-3">
+                        <h2 class="grijs-color ">Neem contact op</h2>
+                    </div>
+                    <form action="#" method="post" netlify>
+                        <fieldset class="row g-3 mb-3">
+                            <div class="col-md-6 grijs-color">
+                                <label for="firstName" class="form-label">voornaam</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 grijs-color">
+                                <label for="lastName" class="form-label">achternaam</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col grijs-color">
+                                <label for="mobile" class="form-label">mobiel</label>
+                                <input type="tel" class="form-control" id="mobile" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                                placeholder="0415 16 12 13">
+                            </div>
+                            <div class="col grijs-color">
+                                <label for="birthDate" class="form-label">geboortedatum</label>
+                                <input type="date" class="form-control" id="birthDate">
+                            </div>
+                            <div class="col-md-6 grijs-color">
+                                <label for="exampleFormControlTextarea1" class="form-label">stel hier je vraag?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="col-md-6 grijs-color">
+                                <label for="formFile" class="form-label">bestand</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                        </fieldset>
+                        <div class="col-12">
+                            <button type="submit" value="Upload" class="btn btn-primary">verzenden</button>
+                        </div>
+                    </form>
                     
-                    </p>
-            </aside>
-    </main>
-    <footer>
-        <p class="text-center grijs-color fw-medium mt-5"> &copy; 2026 Jelle Mariën</p>
-    </footer>
+                </section>
+                <aside class="col col-md-3 grijs-color">
+                        <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+                            <p>
+                            +32 492 32 73 72  <br>
+                            <a href="mailto:marien.jelle@gmail.com">marien.jelle@gmail.com</a><br>
+                            
+                            </p>
+                    </aside>
+            </main>
+            <footer>
+                <p class="text-center grijs-color fw-medium mt-5"> &copy; <span id="year"></span> Jelle Mariën</p>
+            </footer>
 
 </body>
 </html> 
