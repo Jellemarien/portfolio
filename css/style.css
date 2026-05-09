@@ -13,7 +13,7 @@
   background-color: #1c1c1c;
 }
 .grijs-color {
-  color: #eaeaea;
+  color: #eaeaea  !important;
 }
 .blauw-color {
   color: #0099ff  !important;
@@ -26,11 +26,18 @@
   filter: invert(1);  
 }
 .blauw-achtergrond {
-  background-color: #0099ff;
+  background-color: #0099ff !important;
 }
 body {
   padding-top: 100px;
 }
 .donker-color {
   color: #1c1c1c;
+}
+.achtergrond {
+  background-image: url(../assets/background.jpg);
+  background-position: center;
+}
+.titel {
+  text-shadow: 4px 4px 8px #0099ff;
 }
