@@ -14,5 +14,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-let WMarker = L.marker([51.21674, 4.69245], { icon: logo }).addTo(map);
-WMarker.bindPopup("patrijzenlaan 6").openPopup();
+let WMarker = L.marker([51.218193, 4.690154], { icon: logo }).addTo(map);
+WMarker.bindPopup("kapelstraat").openPopup();
